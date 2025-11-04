@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SODA3D - Sodas Coleccionables</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="BUBBLE SIPS LOGO.png" alt="SODA3D" class="logo-img">
+            </a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="cart-icon">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Sodas Coleccionables</h1>
+                    <p>Descubre nuestra exclusiva colección de sodas en 3D. Cada pieza es una obra de arte única para
+                        verdaderos coleccionistas.</p>
+                    <a href="shop.html" class="btn-hero">Ver Colección →</a>
+                </div>
+                <div class="hero-carousel">
+                    <!-- Carrusel de sodas -->
+                    <div class="carousel-container">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Soda Vintage 3D" class="active">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
+                            alt="Soda Limited Edition">
+                        <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80"
+                            alt="Soda Artística">
+                    </div>
+                </div>
+            </div>
+            <!-- Barra de búsqueda -->
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="text" id="search-input" name="q" placeholder="Buscar sodas por nombre..." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <!-- Contenedor para resultados -->
+                <div id="search-results" class="search-results" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Colecciones Destacadas</h2>
+                <a href="shop.html" class="view-all">Ver Todas →</a>
+            </div>
+            <div class="collections-grid">
+                <!-- Colección 1 -->
+                <div class="mask-card">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Sodas Vintage">
+                    <div class="mask-info">
+                        <h3>Edición Vintage</h3>
+                        <p>Diseños retro únicos</p>
+                        <span class="price">Desde $599 MXN</span>
+                    </div>
+                </div>
+                <!-- Colección 2 -->
+                <div class="mask-card">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Sodas Vintage">
+                    <div class="mask-info">
+                        <h3>Limited Edition</h3>
+                        <p>Series numeradas exclusivas</p>
+                        <span class="price">Desde $899 MXN</span>
+                    </div>
+                </div>
+                <!-- Colección 3 -->
+                <div class="mask-card">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Sodas Vintage">
+                    <div class="mask-info">
+                        <h3>Arte 3D</h3>
+                        <p>Diseños artísticos premium</p>
+                        <span class="price">Desde $1,299 MXN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Los Más Vendidos</h2>
+                <a href="shop.html" class="view-all">Ver Todos →</a>
+            </div>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Nuevo</div>
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Soda Clásica 3D">
+                    <h3>Soda Clásica Retro</h3>
+                    <p class="price">$799 MXN</p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="Sodas Vintage">
+                    <h3>Soda Neon Glow</h3>
+                    <p class="price">$1,199 MXN</p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-badge">Agotado</div>
+                    <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80"
+                        alt="Soda Crystal 3D">
+                    <h3>Soda Crystal Edition</h3>
+                    <p class="price">$1,599 MXN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Únete al Bubble Club</h2>
+            <p>Recibe acceso exclusivo a ediciones limitadas y descuentos especiales.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div id="newsletter-message" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">
+                    <img src="BUBBLE SIPS LOGO.png" alt="SODA3D" class="logo-img footer-logo">
+                </a>
+                <p>Sodas coleccionables en 3D desde 2023.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="shop.html">Todos los Productos</a></li>
+                        <li><a href="shop.html">Nuevos Lanzamientos</a></li>
+                        <li><a href="shop.html">Edición Limitada</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="contact.html">Envíos</a></li>
+                        <li><a href="contact.html">Devoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:hola@soda3d.com">hola@soda3d.com</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 SODA3D. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/newsletter.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración | SODA3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header del Admin -->
+   <header class="admin-header">
+    <div class="container">
+        <div class="admin-brand">
+            <a href="index.html" class="logo">
+                <img src="BUBBLE SIPS LOGO.png" alt="SODA3D" class="logo-img">
+            </a>
+            <span class="admin-badge">Admin</span>
+        </div>
+        
+        <nav class="admin-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Sitio Web</a></li>
+                <li><a href="#" class="nav-link active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#" class="nav-link"><i class="fas fa-shopping-bag"></i> Pedidos</a></li>
+                <li><a href="#" class="nav-link"><i class="fas fa-users"></i> Clientes</a></li>
+                <li><a href="#" class="nav-link"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <div class="container">
+            <!-- Header del Dashboard -->
+            <div class="dashboard-header">
+                <h1>Panel de Administración</h1>
+                <p>Gestiona tu catálogo de sodas coleccionables</p>
+            </div>
+
+            <!-- Estadísticas Rápidas -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Productos Activos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>24</h3>
+                        <p>Pedidos del Mes</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>156</h3>
+                        <p>Clientes Registrados</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>$45,680</h3>
+                        <p>Ingresos Mensuales</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Gestión de Productos -->
+            <section class="products-section">
+                <div class="section-header">
+                    <h2>Gestión de Sodas Coleccionables</h2>
+                    <button class="btn-primary" id="add-product-btn">
+                        <i class="fas fa-plus"></i> Agregar Nueva Soda
+                    </button>
+                </div>
+
+                <!-- Tabla de Productos -->
+                <div class="table-container">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Tags</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="product-image-small">
+                                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Soda Retro">
+                                    </div>
+                                </td>
+                                <td>Soda Retro Clásica 3D</td>
+                                <td>$799 MXN</td>
+                                <td>
+                                    <span class="stock-badge high">15</span>
+                                </td>
+                                <td>
+                                    <div class="tags-container">
+                                        <span class="tag">vintage</span>
+                                        <span class="tag">retro</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="status-badge active">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-edit" title="Editar">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-delete" title="Eliminar">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="product-image-small">
+                                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Soda Neon">
+                                    </div>
+                                </td>
+                                <td>Soda Neon Glow Edition</td>
+                                <td>$1,199 MXN</td>
+                                <td>
+                                    <span class="stock-badge medium">8</span>
+                                </td>
+                                <td>
+                                    <div class="tags-container">
+                                        <span class="tag">neon</span>
+                                        <span class="tag">glow</span>
+                                        <span class="tag">limited</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="status-badge active">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-edit" title="Editar">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-delete" title="Eliminar">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <div class="product-image-small">
+                                        <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Soda Crystal">
+                                    </div>
+                                </td>
+                                <td>Soda Crystal Clear 3D</td>
+                                <td>$1,599 MXN</td>
+                                <td>
+                                    <span class="stock-badge low">2</span>
+                                </td>
+                                <td>
+                                    <div class="tags-container">
+                                        <span class="tag">crystal</span>
+                                        <span class="tag">limited</span>
+                                        <span class="tag">premium</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="status-badge active">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-edit" title="Editar">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn-delete" title="Eliminar">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal para Agregar/Editar Producto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Agregar</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="product-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="product-name">Nombre del Producto</label>
+                            <input type="text" id="product-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-price">Precio (MXN)</label>
+                            <input type="number" id="product-price" name="price" min="0" step="0.01" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-description">Descripción</label>
+                        <textarea id="product-description" name="description" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="product-stock">Stock Disponible</label>
+                            <input type="number" id="product-stock" name="stock" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">URL de la Imagen</label>
+                            <input type="url" id="product-image" name="image" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tags</label>
+                        <div class="tags-input-container">
+                            <div class="selected-tags" id="selected-tags">
+                                <!-- Tags seleccionados aparecerán aquí -->
+                            </div>
+                            <input type="text" id="tag-input" placeholder="Escribe un tag y presiona Enter">
+                        </div>
+                        <div class="suggested-tags">
+                            <span class="tag-suggestion" data-tag="vintage">vintage</span>
+                            <span class="tag-suggestion" data-tag="retro">retro</span>
+                            <span class="tag-suggestion" data-tag="moderno">moderno</span>
+                            <span class="tag-suggestion" data-tag="limited">limited</span>
+                            <span class="tag-suggestion" data-tag="premium">premium</span>
+                            <span class="tag-suggestion" data-tag="glow">glow</span>
+                            <span class="tag-suggestion" data-tag="neon">neon</span>
+                            <span class="tag-suggestion" data-tag="crystal">crystal</span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancel-btn">Cancelar</button>
+                        <button type="submit" class="btn-primary">Guardar Producto</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <!-- En tu confirm-modal, actualiza el texto -->
+<div id="confirm-modal" class="modal">
+    <div class="modal-content confirm-modal">
+        <div class="modal-header">
+            <h3>Confirmar Eliminación PERMANENTE</h3>
+        </div>
+        <div class="modal-body">
+            <p><strong>⚠️ ADVERTENCIA:</strong> ¿Estás seguro de que deseas eliminar permanentemente este producto? </p>
+            <p>Esta acción <strong>NO se puede deshacer</strong> y el producto será borrado completamente de la base de datos.</p>
+        </div>
+        <div class="modal-actions">
+            <button class="btn-secondary" id="cancel-delete">Cancelar</button>
+            <button class="btn-danger" id="confirm-delete">Eliminar Permanentemente</button>
+        </div>
+    </div>
+</div>
+
+    <script src="scripts/admin.js"></script>
+</body>
+</html>
