@@ -1,10 +1,11 @@
 /* About Hero */
 .about-hero {
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1293&q=80') no-repeat center/cover;
+     background-image: url('../img/YGB.4.2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Ajusta la altura según necesites */
+    width: 100%;
     color: var(--white);
     text-align: center;
 }
@@ -209,12 +210,6 @@
 .process-step p {
     color: var(--dark-gray);
     line-height: 1.6;
-}
-
-/* About Hero Background */
-.about-hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center/cover;
 }
 
 /* Value Icons Updated */

@@ -48,17 +48,14 @@
                         verdaderos coleccionistas.</p>
                     <a href="shop.html" class="btn-hero">Ver Colección →</a>
                 </div>
-                <div class="hero-carousel">
-                    <!-- Carrusel de sodas -->
-                    <div class="carousel-container">
-                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Soda Vintage 3D" class="active">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
-                            alt="Soda Limited Edition">
-                        <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80"
-                            alt="Soda Artística">
-                    </div>
+               <div class="hero-carousel">
+                <!-- Reemplazar carrusel por visor 3D -->
+                <div id="visor3d" class="modelo-3d-container"></div>
+                <div class="modelo-controls">
+                    <button id="rotar-auto" class="control-btn active">Rotación Auto</button>
+                    <button id="rotar-manual" class="control-btn">Control Manual</button>
                 </div>
+            </div>
             </div>
             <!-- Barra de búsqueda -->
             <!-- Barra de búsqueda -->
@@ -77,14 +74,14 @@
     <section class="collections">
         <div class="container">
             <div class="section-header">
-                <h2>Colecciones Destacadas</h2>
+                <h2>Nuestros Productos</h2>
                 <a href="shop.html" class="view-all">Ver Todas →</a>
             </div>
             <div class="collections-grid">
                 <!-- Colección 1 -->
                 <div class="mask-card">
-                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                        alt="Sodas Vintage">
+                    <img src="img/B.2.png"
+                        alt="Soda Azul">
                     <div class="mask-info">
                         <h3>Edición Vintage</h3>
                         <p>Diseños retro únicos</p>
@@ -93,7 +90,7 @@
                 </div>
                 <!-- Colección 2 -->
                 <div class="mask-card">
-                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    <img src="img/G.2.png"
                         alt="Sodas Vintage">
                     <div class="mask-info">
                         <h3>Limited Edition</h3>
@@ -103,7 +100,7 @@
                 </div>
                 <!-- Colección 3 -->
                 <div class="mask-card">
-                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    <img src="img/Y.2.png"
                         alt="Sodas Vintage">
                     <div class="mask-info">
                         <h3>Arte 3D</h3>
@@ -115,40 +112,7 @@
         </div>
     </section>
 
-    <!-- Productos Destacados -->
-    <section class="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Los Más Vendidos</h2>
-                <a href="shop.html" class="view-all">Ver Todos →</a>
-            </div>
-            <div class="products-grid">
-                <!-- Producto 1 -->
-                <div class="product-card">
-                    <div class="product-badge">Nuevo</div>
-                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                        alt="Soda Clásica 3D">
-                    <h3>Soda Clásica Retro</h3>
-                    <p class="price">$799 MXN</p>
-                </div>
-                <!-- Producto 2 -->
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                        alt="Sodas Vintage">
-                    <h3>Soda Neon Glow</h3>
-                    <p class="price">$1,199 MXN</p>
-                </div>
-                <!-- Producto 3 -->
-                <div class="product-card">
-                    <div class="product-badge">Agotado</div>
-                    <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80"
-                        alt="Soda Crystal 3D">
-                    <h3>Soda Crystal Edition</h3>
-                    <p class="price">$1,599 MXN</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Newsletter -->
     <section class="newsletter">
@@ -209,6 +173,9 @@
     <script src="scripts/cart.js"></script>
     <script src="scripts/newsletter.js"></script>
     <script src="scripts/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="scripts/3d-viewer.js"></script>
 </body>
 
 </html>

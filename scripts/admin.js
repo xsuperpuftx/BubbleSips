@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadProducts() { // Cargar productos desde php
     try {
-        const response = await fetch('php/productos.php');
+        const response = await fetch('php/crud_productos.php');
         
         if (!response.ok) {
             throw new Error('Error al cargar productos');

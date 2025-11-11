@@ -1,10 +1,11 @@
 /* Shop Hero */
 .shop-hero {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80') no-repeat center/cover;
+    background-image: url('../img/YGB.4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Ajusta la altura según necesites */
+    width: 100%;
     color: var(--white);
     text-align: center;
 }

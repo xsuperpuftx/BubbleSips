@@ -69,6 +69,7 @@ function getProducto($id) {
     global $pdo;
     
     try {
+        // Validar que el ID sea numérico
         if (!is_numeric($id)) {
             http_response_code(400);
             echo json_encode(['error' => 'ID de producto inválido']);
@@ -95,6 +96,7 @@ function createProducto($data) {
     global $pdo;
     
     try {
+        // Validar datos requeridos
         $required = ['nombre', 'precio', 'descripcion', 'stock'];
         foreach ($required as $field) {
             if (!isset($data[$field]) || empty($data[$field])) {
