@@ -1,0 +1,22 @@
+# Blender 4.5.4 LTS MTL File: 'SodaVerde.blend'
+# www.blender.org
+
+newmtl Metal
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Y_Etiqueta
+Ns 608.399963
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd C:/Soda Etiqueta B.png
+map_d C:/Soda Etiqueta B.png

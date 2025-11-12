@@ -48,16 +48,34 @@
                         verdaderos coleccionistas.</p>
                     <a href="shop.html" class="btn-hero">Ver Colección →</a>
                 </div>
-               <div class="hero-carousel">
-                <!-- Reemplazar carrusel por visor 3D -->
-                <div id="visor3d" class="modelo-3d-container"></div>
-                <div class="modelo-controls">
-                    <button id="rotar-auto" class="control-btn active">Rotación Auto</button>
-                    <button id="rotar-manual" class="control-btn">Control Manual</button>
+                <div class="hero-carousel">
+                    <!-- Carrusel reemplazando el visor 3D -->
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="img/B.2.png" alt="Soda Azul Edición Vintage">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/G.2.png" alt="Soda Verde Limited Edition">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/Y.2.png" alt="Soda Amarilla Arte 3D">
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                        <button class="carousel-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            </div>
-            <!-- Barra de búsqueda -->
             <!-- Barra de búsqueda -->
             <div class="search-bar">
                 <form id="search-form">
@@ -83,9 +101,9 @@
                     <img src="img/B.2.png"
                         alt="Soda Azul">
                     <div class="mask-info">
-                        <h3>Edición Vintage</h3>
-                        <p>Diseños retro únicos</p>
-                        <span class="price">Desde $599 MXN</span>
+                        <h3>Nebulosa</h3>
+                        <p>Efecto nebulosa con partículas brillantes</p>
+                        <span class="price">$599 MXN</span>
                     </div>
                 </div>
                 <!-- Colección 2 -->
@@ -93,9 +111,9 @@
                     <img src="img/G.2.png"
                         alt="Sodas Vintage">
                     <div class="mask-info">
-                        <h3>Limited Edition</h3>
-                        <p>Series numeradas exclusivas</p>
-                        <span class="price">Desde $899 MXN</span>
+                        <h3>Esmeralda Ancestral</h3>
+                        <p>Tonalidades verdes esmeralda con vetas doradas</p>
+                        <span class="price">$899 MXN</span>
                     </div>
                 </div>
                 <!-- Colección 3 -->
@@ -103,16 +121,14 @@
                     <img src="img/Y.2.png"
                         alt="Sodas Vintage">
                     <div class="mask-info">
-                        <h3>Arte 3D</h3>
-                        <p>Diseños artísticos premium</p>
-                        <span class="price">Desde $1,299 MXN</span>
+                        <h3>Sol Naciente</h3>
+                        <p>Efecto de resplandor solar</p>
+                        <span class="price">$1,299 MXN</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    
 
     <!-- Newsletter -->
     <section class="newsletter">
@@ -173,9 +189,7 @@
     <script src="scripts/cart.js"></script>
     <script src="scripts/newsletter.js"></script>
     <script src="scripts/search.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
-    <script src="scripts/3d-viewer.js"></script>
+    <script src="scripts/carousel.js"></script>
 </body>
 
 </html>

@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!productId || isNaN(productId)) {
         showErrorMessage('Producto no encontrado. Redirigiendo a la tienda...');
-        setTimeout(() => {
-            window.location.href = 'shop.html';
-        }, 3000);
         return;
     }
     loadProductFromDatabase(productId);
@@ -47,9 +44,6 @@ async function loadProductFromDatabase(productId) {
         
     } catch (error) {
         showErrorMessage('Error al cargar el producto: ' + error.message);
-        setTimeout(() => {
-            window.location.href = 'shop.html';
-        }, 3000);
     }
 }
 
@@ -68,10 +62,14 @@ function showErrorMessage(message) {
                 <i class="fas fa-exclamation-triangle"></i> Error
             </h1>
             <p style="font-size: 18px; margin-bottom: 20px;">${message}</p>
-            <div class="loading-spinner"></div>
+            <a href="shop.html" class="btn-details" style="display: inline-block; margin-top: 20px;">
+                Volver a la tienda
+            </a>
         </div>
     `;
 }
+
+
 
 function displayProductDetails(product) {
 
@@ -447,4 +445,16 @@ function showAddedToCartMessage(productName, quantity = 1) {
         document.head.appendChild(slideOutStyle);
     }
 }
+
+function hideLoadingState() {
+    // Esta función puede estar vacía o puedes agregar lógica para ocultar el estado de carga
+    console.log('✅ Carga completada - Estado de loading oculto');
+    
+    // Opcional: Si tienes elementos específicos de loading, los puedes ocultar aquí
+    const loadingElements = document.querySelectorAll('.loading-spinner, .loading-message');
+    loadingElements.forEach(element => {
+        element.style.display = 'none';
+    });
+}
+
 updateCartCount();
